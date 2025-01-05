@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello, World!!!</h1>
+    <p>My name is {{ first_name }}</p>
+    <p>{{ stuff|safe }}</p>
+    <p>{{ stuff|striptags }}</p>
+    <p>{{ stuff2|title }}</p>
+
+    <h3>Pizza</h3>
+    {% for type in pizza %}
+
+        {% if type == 19 %}
+            {{ type + 100 }}<br/>
+        {% else %}
+            {{ type }}<br/>
+        {% endif %}
+
+    {% endfor %}
+
+    <p>{{ pizza.0|reverse }}</p>
+</body>
+</html>
