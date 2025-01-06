@@ -4,6 +4,8 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 
 app = Flask(__name__)
+
+# Secret Key
 app.config['SECRET_KEY'] = "my super secret key that no one is suppose to know"
 
 # Create a Form Class
